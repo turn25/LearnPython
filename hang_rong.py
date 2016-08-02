@@ -33,7 +33,7 @@ def chon_hang_rong(so_hang_gioi_thieu):
     tong_hang = [str(x + 1) for x in range(int(so_hang_gioi_thieu))]
     chuoi_hang = ' / '.join(tong_hang)
     while hang not in tong_hang:
-        print ('Hay chon hang dong ' + chuoi_hang)
+        print ('Hãy chọn hang động ' + chuoi_hang)
         hang = raw_input()
 
     return hang
@@ -63,10 +63,9 @@ def kiem_tra_hang(hang_da_chon, so_hang_kiem_tra):
 dong_y = 'co'
 while dong_y == 'co' or dong_y == 'y' or dong_y == 'yes' or dong_y == 'ok':
     hang = chon_cap_do()
-    #kiem_tra_so_hang = chon_cap_do()
     hien_gioi_thieu(hang)
     so_hang = chon_hang_rong(hang)
-    kiem_tra_hang(so_hang, hang)#kiem_tra_so_hang)
+    kiem_tra_hang(so_hang, hang)
 
     print ('Bạn có muốn chơi lại? (co/khong)')
     dong_y = raw_input()
