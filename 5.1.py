@@ -1,0 +1,5 @@
+print ('tuan\\ tuan')
+print ('tuan\n tuan')
+print ('tuan\t tuan')
+print ('tuan\' tuan')
+print ('tuan\" tuan')
